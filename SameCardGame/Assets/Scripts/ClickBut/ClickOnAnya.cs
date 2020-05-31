@@ -20,7 +20,22 @@ public class ClickOnAnya : MonoBehaviour
         }
         catch (InvalidCastException) { Debug.Log("Mal"); }
         Contador.numeroInicial += añadir;
-      //  if (Contador.numeroInicial == 0) cont.SendMessage("crearCarta");
+        if (Contador.numeroInicial == 0) cont.SendMessage("crearCarta");
+    }
+
+    public void anya2()
+    {
+        Contador.numeroInicial += 2;
+    }
+
+    public void anya4()
+    {
+        Contador.numeroInicial += 4;
+    }
+
+    public void anya8()
+    {
+        Contador.numeroInicial += 8;
     }
 
 
